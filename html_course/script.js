@@ -1,18 +1,8 @@
-let typeValue = null
+let num = 0, result = 0;
 
-switch (typeValue) {
-    case true:
-        console.log("The value is true");
-        break;
-    case false:
-        console.log("The value is false");
-        break;
-    case null:
-        console.log("The value is null");
-        break;
-    case undefined:
-        console.log("The value is undefined");
-        break;
-    default:
-        console.log("The value is of an unexpected type");
+num = prompt("Please enter a number:");
+
+for (let i = 0; i <= 1000; i++) {
+    result = num * i;
+    console.log(`${num} x ${i} = ${result}`);
 }
