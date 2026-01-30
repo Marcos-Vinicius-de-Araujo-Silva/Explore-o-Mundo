@@ -39,3 +39,24 @@ body {
     list-style-type: none;
     padding: 0;
 }
+
+.header__nav-list li{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10% 20%;
+    margin-bottom: .1rem;
+}
+
+.header__nav-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.header__h2 {
+    font-size: 1.2rem;
+    margin: .4rem;
+}
+
+.header__p {
+    font-size: .8rem;
+    margin: 0;
+}

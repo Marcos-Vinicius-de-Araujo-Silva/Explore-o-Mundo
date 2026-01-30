@@ -1,8 +1,7 @@
-let num = 0, result = 0;
+let num = parseInt(prompt("Digite um número:"));
 
-num = prompt("Please enter a number:");
-
-for (let i = 0; i <= 1000; i++) {
-    result = num * i;
-    console.log(`${num} x ${i} = ${result}`);
+for(let i = 2; i <= num; i++) { 
+    if(i % 2 === 0) {
+        document.write(i + "<br>");
+    }
 }
