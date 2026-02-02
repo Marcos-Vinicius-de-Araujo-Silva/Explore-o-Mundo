@@ -7,10 +7,14 @@ body {
     height: fit-content;
     box-sizing: border-box;
     padding-top: 1rem;
-    aspect-ratio: 3/4;
     background-color: lightblue;
     text-align: center;
     color: white;
+
+    background-image: url("imagens/headerImageMobile.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .header__h1 {
@@ -32,7 +36,7 @@ body {
 }
 
 .header__button:hover {
-    background-color:  #ff7d45;
+    background-color: #ff7d45;
 }
 
 .header__nav-list {
@@ -40,10 +44,19 @@ body {
     padding: 0;
 }
 
-.header__nav-list li{
-    background-color: rgba(0, 0, 0, 0.1);
+.header__nav-list li {
+    background-color: rgba(0, 0, 0, .1);
+    margin-bottom: .2rem;
+    padding: 0;
+}
+
+.header__nav-link {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 100%;
     padding: 10% 20%;
-    margin-bottom: .1rem;
+    box-sizing: border-box;
 }
 
 .header__nav-icon {
@@ -59,4 +72,31 @@ body {
 .header__p {
     font-size: .8rem;
     margin: 0;
+}
+
+@media (min-width: 768px) {
+
+  .header__h1 {
+    font-size: 6rem;
+    margin: 2.5rem 0;
+ }
+
+  .header {
+    background-image: url("imagens/header-image-original.jpg");
+  }
+
+  .header__button {
+    margin-bottom: 2rem;
+}
+
+  .header__nav-list {
+    display: flex;
+    justify-content: center;
+    gap: .2rem;
+  }
+
+  .header__nav-list li{
+    flex-grow: 1;
+    margin-bottom: 0;
+  }
 }

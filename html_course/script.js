@@ -1,7 +1,14 @@
-let num = parseInt(prompt("Digite um número:"));
+let num = 0; resultado = 0, flag = 10;
 
-for(let i = 2; i <= num; i++) { 
-    if(i % 2 === 0) {
-        document.write(i + "<br>");
+num = parseInt(prompt("Digite um número:"));
+
+for (let i = 1; i <= 1000; i++) {
+    resultado = i * num;
+    
+    if (resultado/flag >= 1){
+        document.write("----<br>");
+        flag *= 10;
     }
+
+    document.write(i + " x " + num + " = " + resultado + "<br>");
 }
