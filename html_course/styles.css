@@ -59,9 +59,18 @@ body {
     box-sizing: border-box;
 }
 
+.header__nav-link:hover {
+    background-color: rgba(0, 0, 0, .2);
+    color: #dc6d3c;
+}
+
 .header__nav-icon {
     width: 3rem;
     height: 3rem;
+}
+
+.header__nav-icon:hover {
+  stroke: blue;
 }
 
 .header__h2 {
@@ -99,4 +108,16 @@ body {
     flex-grow: 1;
     margin-bottom: 0;
   }
+}
+
+.main__place {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main__imagem {
+    width: 100%;
+    
 }

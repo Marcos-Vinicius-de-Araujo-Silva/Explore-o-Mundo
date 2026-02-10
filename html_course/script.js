@@ -1,14 +1,14 @@
-let num = 0; resultado = 0, flag = 10;
+let dado1 = 0, dado2 = 0, contador = 0;
 
-num = parseInt(prompt("Digite um número:"));
+for(let i = 1; i <= 10;) {
+    contador++;
+    dado1 = Math.floor(Math.random() * 6) + 1;
+    dado2 = Math.floor(Math.random() * 6) + 1;
 
-for (let i = 1; i <= 1000; i++) {
-    resultado = i * num;
-    
-    if (resultado/flag >= 1){
-        document.write("----<br>");
-        flag *= 10;
+    if(dado1 !== dado2) {
+        continue;
     }
-
-    document.write(i + " x " + num + " = " + resultado + "<br>");
+    i++
 }
+
+console.log(`Os dados deram ${dado1} e ${dado2}, contador: ${contador}`);
