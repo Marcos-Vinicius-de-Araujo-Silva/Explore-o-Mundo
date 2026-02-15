@@ -1,14 +1,9 @@
-let dado1 = 0, dado2 = 0, contador = 0;
+let nomes = ["João", "Maria", "Pedro", "Ana", "Lucas"];
 
-for(let i = 1; i <= 10;) {
-    contador++;
-    dado1 = Math.floor(Math.random() * 6) + 1;
-    dado2 = Math.floor(Math.random() * 6) + 1;
+nomes.push(prompt("Digite um nome:"));
 
-    if(dado1 !== dado2) {
-        continue;
-    }
-    i++
+for (let i = 0; i < nomes.length; i++) {
+    console.log(nomes[i]);
 }
 
-console.log(`Os dados deram ${dado1} e ${dado2}, contador: ${contador}`);
+console.log("Quantidade de nomes:", nomes.length);

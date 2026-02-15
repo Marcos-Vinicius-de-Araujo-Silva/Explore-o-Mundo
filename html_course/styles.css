@@ -110,6 +110,20 @@ body {
   }
 }
 
+.main {
+    color: rgb(7, 0, 51);
+    text-align: center;
+}
+
+.main__h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.main__place > h2 {
+    margin-top: 0;
+}
+
 .main__place {
     display: flex;
     flex-direction: column;
@@ -118,6 +132,17 @@ body {
 }
 
 .main__imagem {
-    width: 100%;
-    
+    width: 100%;  
+}
+
+@media (min-width: 768px) {
+    .main__places {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .main__place {
+        width: 30%;
+    }
 }
