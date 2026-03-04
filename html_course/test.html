@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,35 @@
 </head>
 
 <style>
-    
+    .linha-com-texto {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .linha-com-texto::before,
+    .linha-com-texto::after {
+        content: '';
+        flex: 1;
+        border-bottom: 1px solid black;
+    }
+
+    .linha-com-texto:not(:empty)::before {
+        margin-right: .5em;
+    }
+
+    .linha-com-texto:not(:empty)::after {
+        margin-left: .5em;
+    }
 </style>
+
 <body>
-    
+
+    <div class="linha-com-texto">
+        <span>OU</span>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>

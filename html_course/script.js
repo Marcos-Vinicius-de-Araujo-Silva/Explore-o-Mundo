@@ -1,9 +1,5 @@
-let nomes = ["João", "Maria", "Pedro", "Ana", "Lucas"];
+const pessoas = ["Ana", "Bruno", "Beatriz", "Carlos", "Diana"];
 
-nomes.push(prompt("Digite um nome:"));
-
-for (let i = 0; i < nomes.length; i++) {
-    console.log(nomes[i]);
+for (let i = pessoas.length - 1; i >= 0; i--) {
+    console.log(pessoas[i]);
 }
-
-console.log("Quantidade de nomes:", nomes.length);
