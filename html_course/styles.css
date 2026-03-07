@@ -110,6 +110,10 @@ body {
     text-align: center;
 }
 
+.main__text-line-image {
+    width: 30%;
+}
+
 .main__h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -119,15 +123,24 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    flex-wrap: wrap;
 }
 
 .main__place>h2 {
     margin-top: 0;
 }
 
+.main__place {
+    flex: 0 1 100%;
+}
+
 .main__imagem {
     width: 100%;
+    transition: transform 0.3s;
+}
+
+.main__imagem:hover {
+    transform: scale(1.05);
 }
 
 @media (min-width: 768px) {

@@ -1,5 +1,13 @@
-const pessoas = ["Ana", "Bruno", "Beatriz", "Carlos", "Diana"];
+const endereço = {
+		rua: "Rua das Tulias",
+		numero: 302
+	}
 
-for (let i = pessoas.length - 1; i >= 0; i--) {
-    console.log(pessoas[i]);
-}
+const pessoa = {
+	nome: "João",
+	sobrenome: "Fagundes",
+    endereço: endereço
+};
+
+
+document.write(`O endereço é ${pessoa.endereço.rua}, número ${pessoa.endereço.numero}.<br>`);
