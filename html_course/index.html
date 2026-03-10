@@ -17,7 +17,7 @@
     <header class="header">
         <h1 class="header__h1">Explore o Mundo</h1>
         <p>Descubra os destinos mais incríveis para suas próximas aventuras!</p>
-        <button class="header__button">Saiba mais</button>
+        <button class="button">Saiba mais</button>
 
         <nav>
             <ul class="header__nav-list">
@@ -43,7 +43,8 @@
     </header>
 
     <main class="main">
-        <h2 class="main__text-line"><img class="main__text-line-image" src="svg/Destinos Populares.svg" alt="Destinos Populares"></h2>
+        <h2 class="main__text-line"><img class="main__text-line-image" src="svg/Destinos Populares.svg"
+                alt="Destinos Populares"></h2>
         <section class="main__places">
             <article class="main__place">
                 <div>
@@ -65,16 +66,32 @@
             </article>
         </section>
 
-        <article>
-            <h2>Inscreva-se na nossa Newsletter</h2>
-            <p>Receba as melhores ofertas e dicas de viagem diretamente no seu e-mail.</p>
+        <article class="main__newsletter">
+            <div>
+                <h2>Inscreva-se na nossa Newsletter</h2>
+                <p>Receba as melhores ofertas e dicas de viagem diretamente no seu e-mail.</p>
+            </div>
 
-            <form>
-                <input type="email" placeholder="Digite seu e-mail" required>
-                <button type="submit">Cadastrar</button>
+            <form class="main__form-email">
+                <input class="main__form-email-input" type="email" placeholder="Seu e-mail" required>
+                <button class="button" type="submit">Cadastrar</button>
             </form>
         </article>
     </main>
+
+
+    <footer class="footer">
+        <nav class="footer__nav">
+            <ul class="footer__ul">
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Destinos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <hr style ="border: none; height: 0; border-top: 1px solid #ccc; width: 80%;">
+        <p>&#174; 2024 Explore o Mundo. Todos os direitos reservados.</p>
+
+    </footer>
 </body>
 
 </html>

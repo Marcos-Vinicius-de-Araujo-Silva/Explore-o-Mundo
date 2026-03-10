@@ -8,35 +8,13 @@
 </head>
 
 <style>
-    .linha-com-texto {
-        display: flex;
-        align-items: center;
-        text-align: center;
-    }
-
-    .linha-com-texto::before,
-    .linha-com-texto::after {
-        content: '';
-        flex: 1;
-        border-bottom: 1px solid black;
-    }
-
-    .linha-com-texto:not(:empty)::before {
-        margin-right: .5em;
-    }
-
-    .linha-com-texto:not(:empty)::after {
-        margin-left: .5em;
-    }
+   
 </style>
 
 <body>
+    <h1 class="title">This is a simple HTML page</h1>
 
-    <div class="linha-com-texto">
-        <span>OU</span>
-    </div>
-
-    <script src="script.js"></script>
+    <input id="input" type="text" value="Yesterday, my wife tried to kill me!" style="width: 70vw;">
 </body>
 
 </html>
