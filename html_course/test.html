@@ -15,6 +15,29 @@
     <h1 class="title">This is a simple HTML page</h1>
 
     <input id="input" type="text" value="Yesterday, my wife tried to kill me!" style="width: 70vw;">
+
+    <ul class="list">
+        
+    </ul>
+
+    <script>
+
+        const listPessoas = [
+            { nome: 'João', idade: 30 },
+            { nome: 'Maria', idade: 25 },
+            { nome: 'Pedro', idade: 35 },
+            { nome: 'Ana', idade: 28 },
+            { nome: 'Lucas', idade: 32 }
+        ];
+
+        const listElement = document.querySelector('.list');
+
+        listPessoas.forEach(pessoa => {
+            const li = document.createElement('li');
+            li.textContent = `${pessoa.nome} - ${pessoa.idade} anos`;
+            listElement.appendChild(li);
+        });
+    </script>
 </body>
 
 </html>
